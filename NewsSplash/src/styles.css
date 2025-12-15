@@ -1,0 +1,121 @@
+body, html {
+  background-color: rgb(255, 250, 220);
+}
+
+#logo {
+  width: 250px;
+}
+
+#canvas {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12in;
+  height: 10in;
+  background-color: white;
+  border: 2px solid rgb(104, 76, 0);
+  border-radius: 15px;
+  cursor: crosshair;
+  box-shadow: 10px 10px 0px rgb(104, 76, 0);
+}
+
+#overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12in;
+  height: 10in;
+  border: none;
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+.toolbar {
+  position: absolute;
+  left: 30px;
+  top: 150px;
+  background-color: white;
+  width: 145px;
+  height: 685px;
+  border: 2px solid rgb(66, 160, 136);
+  border-radius: 15px;
+  box-shadow: 10px 10px 0px rgb(66, 160, 136);
+}
+
+.tool {
+  position: relative;
+  left: 10px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid rgb(66, 160, 136);
+  border-radius: 5px;
+  background-color: white;
+}
+
+#erase {
+  background-color: white;
+  box-shadow: 3px 3px 0px rgb(66, 160, 136);
+  width: 115px;
+}
+#clear {
+  background-color: white;
+  border: 2px solid rgb(255, 104, 104);
+  box-shadow: 3px 3px 0px rgb(255, 104, 104);
+  width: 115px;
+}
+#export {
+  background-color: white;
+  border: 2px solid rgb(104, 76, 0);
+  box-shadow: 3px 3px 0px rgb(104, 76, 0);
+  width: 115px;
+}
+#small {
+  background-color: white;
+  box-shadow: 3px 3px 0px rgb(66, 160, 136);
+}
+#medium {
+  background-color: white;
+  box-shadow: 3px 3px 0px rgb(66, 160, 136);
+}
+#large {
+  background-color: white;
+  box-shadow: 3px 3px 0px rgb(66, 160, 136);
+}
+#red {
+  background-color: rgb(255, 117, 117);
+}
+#blue {
+  background-color: rgb(132, 210, 255);
+}
+#orange {
+  background-color: rgb(255, 139, 62);
+}
+#deepblue{
+  background-color: rgb(96, 99, 255);
+}
+#yellow {
+  background-color: rgb(255, 255, 102);
+}
+#green{
+  background-color: rgb(98, 255, 119);
+}
+#purple {
+  background-color: rgb(164, 94, 255);
+}
+#pink {
+  background-color: rgb(255, 108, 243);
+}
+#darkgreen{
+  background-color: rgb(19, 165, 0);
+}
+#brown {
+  background-color: rgb(145, 119, 71);
+}
+#black {
+  background-color: black;
+}
