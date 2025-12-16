@@ -24,6 +24,18 @@ canvas.addEventListener('mousemove', (e) => {
     }
 });
 
+document.getElementById('headline').addEventListener('change', () => {
+  var title = (document.getElementById("headline").value);
+  document.getElementById("headlineText").innerHTML = title;
+  document.getElementById('headline').style.opacity = '0%';
+  document.getElementById('headlineText').style.opacity = '100%';
+});
+
+document.getElementById('headline').addEventListener('click', () => {
+  document.getElementById('headline').style.opacity = '100%';
+  document.getElementById('headlineText').style.opacity = '0%';
+});
+
 document.getElementById('export').addEventListener('click', ()=> {
   printresult();
 })

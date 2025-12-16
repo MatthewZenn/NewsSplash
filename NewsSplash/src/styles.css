@@ -8,6 +8,14 @@ body, html {
   src:url("assets/Hello.ttf");
 }
 
+#close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  top: 10px;
+}
+
 #container {
   position: absolute;
   left: 50%;
@@ -146,7 +154,7 @@ body, html {
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: Hello;
-  font-size: 45pt;
+  font-size: 40pt;
   color: rgb(66, 160, 136);
   background-color: transparent;
   border: none;
@@ -154,8 +162,31 @@ body, html {
   padding-top: 50px;
   box-sizing: border-box;
   overflow: hidden;
+  text-wrap: wrap;
   cursor: text;
   text-transform: uppercase;
+  resize: none;
+  z-index: 99;
+}
+
+#headlineText {
+  position: absolute;
+  width: 1000px;
+  height: 150px;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Hello;
+  font-size: 40pt;
+  color: rgb(66, 160, 136);
+  background-color: transparent;
+  box-sizing: border-box;
+  padding-top: 50px;
+  z-index: 99;
+  display: inline-block;
+  text-wrap: wrap;
+  pointer-events: none;
 }
 
 #headline::placeholder {
@@ -188,7 +219,7 @@ body, html {
   left: 5px;
   width: 30px;
   height: 30px;
-  background-color: red;
+  background-color: black;
   border-radius: 50px;
 }
 
@@ -199,4 +230,14 @@ body, html {
   font-size: 30pt;
   font-family: Hello;
   color: rgb(66, 160, 136);
+}
+
+.claim {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  margin: 0;
+  color: rgb(184, 167, 120);
+  font-family: Hello;
+  font-size: 16pt;
 }

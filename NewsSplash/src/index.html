@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Splash</title>
   </head>
   <body>
+    <button id="close"><img src="" alt=""></button>
+    <textarea id="headline" placeholder="HEADLINE..."></textarea>
     <div id="container">
+      <p id="headlineText"></p>
       <canvas id="canvas" width="1200" height="1000"></canvas>
       <img src="assets/1.png" id="overlay">
-      <textarea id="headline" placeholder="HEADLINE..."></textarea>
     </div>
     <div class="toolbar">
       <button class="tool" id="red"></button>
@@ -30,13 +33,14 @@
       <button class="tool" id="medium"><img src="assets/medium_icon.png" alt=""></button>
       <button class="tool" id="large"><img src="assets/large_icon.png" alt=""></button>
       <button class="tool" id="largest"><img src="assets/largest_icon.png" alt=""></button>
-      <button class="tool" id="clearPage"><img src="" alt=""></button>
+      <button class="tool" id="clearPage"><img src="assets/clear.png" alt=""></button>
       <button class="tool" id="export"><img src="assets/share.png" alt=""></button>
       <div class="box">
         <span class="spanner"><span id="spann"></span></span>
         <p id="code">5</p>
       </div>
     </div>
+    <p class="claim">2025 Matthew Zenn || V-0.0.1</p>
     <script src="JS/logic.js"></script>
     <script src="JS/html2canvas.min.js"></script>
     <script src="JS/canvas2image.js"></script>
