@@ -10,8 +10,11 @@
 
   <body>
     <img src="assets/Logo.png" id="logo">
-    <canvas id="canvas" width="1200" height="1000"></canvas>
-    <img src="assets/1.png" id="overlay">
+    <div id="container">
+      <canvas id="canvas" width="1200" height="1000"></canvas>
+      <img src="assets/1.png" id="overlay">
+      <textarea id="headline" placeholder="HEADLINE..."></textarea>
+    </div>
     <div class="toolbar">
       <button class="tool" id="red"></button>
       <button class="tool" id="blue"></button>
@@ -29,7 +32,7 @@
       <button class="tool" id="small"><img src="assets/small_icon.png" alt=""></button>
       <button class="tool" id="medium"><img src="assets/medium_icon.png" alt=""></button>
       <button class="tool" id="large"><img src="assets/large_icon.png" alt=""></button>
-      <button class="tool" id="clear"></button>
+      <button class="tool" id="clearPage"></button>
       <button class="tool" id="export"><img src="assets/share.png" alt=""></button>
     </div>
     <script src="logic.js"></script>
