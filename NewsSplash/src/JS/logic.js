@@ -20,6 +20,7 @@ canvas.addEventListener('mousemove', (e) => {
         ctx.strokeStyle = currentColor;
         ctx.lineWidth = currentLine;
         ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
         ctx.stroke();
     }
 });

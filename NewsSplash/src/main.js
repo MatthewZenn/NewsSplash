@@ -1,6 +1,3 @@
-//import { getCurrentWindow } from '@tauri-apps/api/window';
-
-// when using `"withGlobalTauri": true`, you may use
 const { getCurrentWindow } = window.__TAURI__.window;
 
 const appWindow = getCurrentWindow();
